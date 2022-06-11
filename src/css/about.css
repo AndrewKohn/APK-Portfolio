@@ -1,0 +1,18 @@
+.section--about .section-container {
+  overflow-y: scroll;
+}
+
+.about-wrapper {
+  width: 100rem;
+  z-index: 5;
+  margin: 8rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: brown; */
+}
+
+.about-wrapper .flex-row .img-square {
+  filter: brightness(1.1) contrast(0.85) saturate(1.2);
+}

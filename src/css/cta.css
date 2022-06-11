@@ -1,0 +1,112 @@
+.section--cta .section-container {
+}
+/* //////////// */
+/* CTA SETTINGS */
+/* //////////// */
+.cta-socials-wrapper {
+  margin: 1.6rem auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  animation: fade-in 2s ease-out;
+}
+.cta-socials-wrapper .social-link {
+  border-radius: 9px;
+  z-index: 5;
+  width: 6rem;
+  height: 6rem;
+}
+
+.cta-socials-wrapper .link--twitter {
+  margin: 0;
+}
+
+.cta-socials-wrapper .social-link .social-icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.menu-form {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 60rem;
+  height: auto;
+  z-index: 10;
+  background-color: red;
+  padding: 1.2rem;
+  border-radius: 9px;
+  box-shadow: 0 0 10px 6px rgba(34, 34, 34, 0.158);
+  background-color: rgba(254, 254, 254, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.name-email-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.name-email-wrapper input {
+  width: 100%;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  border-radius: 7px;
+  background-color: #222;
+  color: #fefefe;
+  border: 1px solid #555;
+  padding-left: 0.8rem;
+}
+
+.menu-form textarea:nth-child(2) {
+  width: 100%;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  resize: none;
+  border-radius: 7px;
+}
+
+.menu-form textarea:nth-child(3) {
+  width: 100%;
+  height: 20rem;
+  resize: none;
+  border-radius: 7px 0 0 7px;
+}
+
+textarea {
+  font-family: inherit;
+  font-size: 1.6rem;
+  background-color: #222;
+  color: #fefefe;
+  border: 1px solid #555;
+  padding-left: 0.8rem;
+}
+
+.form-submit-btn {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 1.2rem 1.6rem;
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.form-submit-btn:hover {
+  background-color: #222;
+  color: #fefefe;
+}
+
+.form-submit-btn:active {
+  transform: scale(0.9);
+}

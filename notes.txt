@@ -1,0 +1,30 @@
+                               
+                          -------------------
+                          APK PORTFOLIO NOTES
+                          -------------------
+
+---------------------------------------------------------------------
+[TODO]
+  HOME:
+    - Fill in section with information.
+
+  ABOUT:
+    - Fill in section with information.
+
+
+  PROJECTS:
+    - Fill in section with information.
+
+
+  CTA:
+    - animate submit button to show that form has been sent successfully.
+
+[NOTE]
+  API's in use:
+    Form submission:  https://formsubmit.co/
+    Weather:          https://developer.accuweather.com/
+    Location:         https://geo.ipify.org/   (1000 use limit)
+
+[FIXME]
+
+[BUG]

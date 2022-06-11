@@ -1,0 +1,57 @@
+.section--projects .section-container {
+  overflow-y: scroll;
+}
+
+.projects-grid {
+  cursor: auto;
+  margin: 8rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2.4rem;
+  row-gap: 3.2rem;
+}
+
+.grid-item {
+  height: 45rem;
+  aspect-ratio: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border-radius: 17px;
+  background-color: #fefefe;
+  z-index: 5;
+}
+
+.grid-img {
+  overflow: hidden;
+  width: 30rem;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid black;
+  border-radius: 17px 17px 0 0;
+}
+
+.grid-img img {
+  display: block;
+  height: 20rem;
+  transition: all 0.4s;
+}
+
+.grid-img img:hover {
+  transform: scale(1.1);
+}
+
+.grid-text {
+  margin-top: 1.2rem;
+}
+
+.grid-text h2 {
+  text-align: center;
+}
+
+.grid-text p {
+  margin: 1.2rem 1.6rem 0 1.6rem;
+}

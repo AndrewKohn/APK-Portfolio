@@ -1,0 +1,263 @@
+/* ///////////////////// */
+/* HOME SECTION SETTINGS */
+/* ///////////////////// */
+/* Date div settings */
+.date-div {
+  width: 20rem;
+  height: 20rem;
+  background-color: transparent;
+  /* border: 1px solid #eee; */
+  box-shadow: 0 0 10px 2px rgba(34, 34, 34, 0.637) inset;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-80%, 30%);
+  animation: fade-in 2s ease-out;
+  background-color: whitesmoke;
+  cursor: auto;
+}
+
+.date-div::after {
+  content: '';
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 2px rgba(34, 34, 34, 0.411);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.current-day {
+  font-size: 3.2rem;
+  font-weight: 600;
+  letter-spacing: 5px;
+  color: #222;
+  position: absolute;
+  top: 0;
+  transform: translateY(-30%);
+  overflow: hidden;
+}
+
+.current-date {
+  font-size: 2.8rem;
+  font-weight: 400;
+  letter-spacing: 5px;
+  color: #222;
+  position: absolute;
+  top: 0;
+  transform: translateY(85%);
+  overflow: hidden;
+}
+
+.current-location {
+  font-family: 'Italiana';
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 5px;
+  color: #222;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(-2.8rem);
+}
+
+.weather-icon {
+  width: 12.8rem;
+  height: auto;
+  aspect-ratio: 1 / 1;
+}
+
+/* /////////////// */
+.section--home .section-container {
+  position: relative;
+}
+
+.home-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fade-in 2s ease-out;
+}
+
+.home-wrapper ~ .flex-row {
+  margin-top: 4rem;
+}
+
+.home-wrapper .flex-row:first-child {
+  gap: 0;
+}
+
+.home-wrapper .flex-row .img-square {
+  margin-right: 8rem;
+}
+
+.home-wrapper .flex-row .img-square {
+  border-radius: 50%;
+  transform: rotate(-40deg);
+  filter: brightness(0.8) contrast(1.1);
+  box-shadow: 0px 10px 0 0 red;
+}
+
+.home-flex-wrapper-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: flex-end;
+}
+
+.home-flex-wrapper-2 {
+  display: flex;
+}
+
+.home-flex-wrapper-2 .text-background {
+  border-radius: 9px 0 9px 9px;
+}
+
+.socials-wrapper {
+  z-index: 5;
+}
+
+.current-work {
+  /* align-self: flex-end; */
+  margin-right: 25rem;
+  margin-bottom: 8rem;
+  animation: fade-in 2s ease-out;
+}
+
+.current-work-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4rem;
+  width: fit-content;
+}
+
+.current-work-link:link,
+.current-work-link:visited {
+  margin-top: 0.4rem;
+  padding: 0.8rem 0.8rem 0.4rem 0.8rem;
+  text-decoration: none;
+  color: #222;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 9px;
+}
+
+.current-work-link:hover {
+  transform: translateX(5px);
+}
+
+.current-work-link:active {
+  color: #fefefe;
+  background-color: #222;
+}
+
+.current-work--popout {
+  margin-left: 1.2rem;
+}
+
+.social-link:link,
+.social-link:visited {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 0 13px 0 0;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #fefefe;
+  color: #222;
+}
+
+.link--twitter {
+  box-shadow: 10px -5px 10px 0 rgba(34, 34, 34, 0.158);
+  /* margin-top: 4rem; */
+}
+
+.link--email:link,
+.link--email:visited {
+  box-shadow: 10px 7px 10px 0 rgba(34, 34, 34, 0.158);
+  border-radius: 0 0 0 0;
+}
+
+.link--github:link,
+.link--github:visited {
+  box-shadow: 10px 10px 10px 0 rgba(34, 34, 34, 0.158);
+  border-radius: 0 0 13px 0;
+}
+
+.social-link:hover {
+  background-color: #222;
+}
+
+.social-link:hover .social-icon {
+  fill: #fefefe;
+}
+
+.social-link:active .social-icon {
+  transform: scale(1.15);
+}
+
+/* RESUME settings */
+.resume-wrapper {
+  display: flex;
+  /* border: 3px solid #fefefe; */
+  border-radius: 11px;
+  /* margin-top: 2rem; */
+  /* margin-left: 60.5rem; */
+  margin-right: 3.2rem;
+  animation: fade-in 2s ease-out;
+  box-shadow: 0 0 10px 5px rgba(34, 34, 34, 0.2);
+}
+
+.btn-resume:link,
+.btn-resume:visited {
+  text-decoration: none;
+  color: #222;
+  cursor: pointer;
+  border: none;
+  padding: 0.8rem 0.6rem 0.8rem 1.2rem;
+  border-radius: 5px 0 0 5px;
+  background-color: #fefefe;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.btn-resume:hover,
+.btn-resume:active {
+  background-color: #222;
+  color: #fefefe;
+}
+
+.btn-resume--download:link,
+.btn-resume--download:visited {
+  color: #222;
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.8rem 0.6rem;
+  border-radius: 0 5px 5px 0;
+  background-color: #fefefe;
+}
+
+.btn-resume--download:hover,
+.btn-resume--download:active {
+  background-color: #222;
+}
+
+.btn-resume--download:hover .resume-download-icon {
+  fill: #fefefe;
+}
+.btn-resume--download:active .resume-download-icon {
+  transform: scale(1.15);
+}
+
+.resume-icon {
+  margin-left: 0.4rem;
+}

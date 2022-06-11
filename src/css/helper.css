@@ -1,0 +1,87 @@
+.hidden {
+  display: none;
+}
+
+/* ANIMATIONS */
+.anim--open-section {
+  animation: open-section 1s ease-out;
+}
+
+.anim--close-section {
+  animation: close-section 1s ease-out;
+}
+
+@keyframes open-section {
+  0% {
+    flex-grow: 1;
+  }
+  100% {
+    flex-grow: 20;
+  }
+}
+
+@keyframes close-section {
+  0% {
+    flex-grow: 20;
+  }
+  100% {
+    flex-grow: 1;
+  }
+}
+
+.anim--fade-in {
+  animation: fade-in 1s ease-out;
+}
+
+.anim--fade-out {
+  animation: fade-out 1s ease-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.anim--wiggle {
+  animation: wiggle 1.15s ease-out;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-45deg);
+  }
+  75% {
+    transform: rotate(45deg);
+  }
+  90% {
+    transform: rotate(-15deg);
+  }
+  95% {
+    transform: rotate(15deg);
+  }
+  97% {
+    transform: rotate(-7deg);
+  }
+  99% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
