@@ -8,17 +8,40 @@
   HOME:
     - Fill in section with information.
 
+        Profile picture
+        [Greeting], I am Andy!  | Front End Developer
+        dateDiv
+
+              --------------
   ABOUT:
     - Fill in section with information.
 
+        Quick about me.
+        Skills
+        Job History that correlates with developement.
 
+              --------------
   PROJECTS:
     - Fill in section with information.
 
+        projects grid
+          -upon selection, popup window opens.  Click [X] or outside to minimize.
+          - project details should include:
+            - Goal of project
+            - Duration
+            - Challenges/hurdles and how it was overcome
+            - Future changes I would like to make to it, looking back to it now.
+            - Link to live demo / link to github files.
 
+              --------------
   CTA:
     - animate submit button to show that form has been sent successfully.
 
+              --------------
+  Other:
+    - Remove favicon in top left and add in js: if fixed-btn clicked, then change flex grow
+
+              --------------
 [NOTE]
   API's in use:
     Form submission:  https://formsubmit.co/
