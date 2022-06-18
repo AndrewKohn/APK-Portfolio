@@ -150,12 +150,12 @@ body {
 }
 
 .startup-btn:hover {
-  animation: darken-bg 3s ease-in;
+  animation: darken-bg 0.25s ease-in;
   background: rgba(34, 34, 34, 0.75);
 }
 
 .startup-btn:not(:hover) {
-  animation: lighten-bg 3s ease-in;
+  animation: lighten-bg 0.25s ease-in;
 }
 
 @keyframes darken-bg {
