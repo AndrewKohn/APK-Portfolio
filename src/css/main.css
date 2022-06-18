@@ -253,11 +253,21 @@ body {
   pointer-events: none;
   position: fixed;
   padding: 0.6rem;
-  background-color: white;
-  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.15);
+  background-color: #ff3ef5;
+  border: #a83eff 1px solid;
   border-radius: 50%;
-  /* mix-blend-mode: difference; */
+  mix-blend-mode: difference;
   transition: transform 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: #ff3ef5 0 0 0 0;
+  }
+  100% {
+    box-shadow: rgba(99, 93, 93, 0) 0 0 0 12px;
+  }
 }
 
 /* SCROLLBAR SETTINGS */
