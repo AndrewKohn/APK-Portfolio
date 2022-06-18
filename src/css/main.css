@@ -100,7 +100,7 @@ body {
   align-items: center;
   background-color: #fff;
   overflow: hidden;
-  cursor: none;
+  cursor: auto;
 }
 
 .startup-container::before {
@@ -141,7 +141,7 @@ body {
   font-size: 14rem;
   font-family: inherit;
   background: rgba(34, 34, 34, 0.35);
-  color: #fafafa;
+  color: #e9e9eb;
   text-shadow: #e71d36 -3px 0, #5c7cfa 3px 0;
   border: none;
   position: relative;
@@ -168,7 +168,7 @@ body {
 }
 
 .startup-btn:hover svg rect {
-  stroke: #ffec99;
+  stroke: #fcc666;
   stroke-width: 15;
   stroke-dasharray: 1002 166;
   stroke-dashoffset: 1167;
