@@ -100,7 +100,7 @@ body {
   align-items: center;
   background-color: #fff;
   overflow: hidden;
-  cursor: auto;
+  cursor: none;
 }
 
 .startup-container::before {
@@ -163,13 +163,13 @@ body {
   stroke: #e71d36;
   stroke-width: 6;
   transition: 3s;
-  /* stroke-dasharray: 400 787; */
   stroke-dasharray: 166 1000;
   stroke-dashoffset: 70;
 }
 
 .startup-btn:hover svg rect {
   stroke: #ffec99;
+  stroke-width: 15;
   stroke-dasharray: 1002 166;
   stroke-dashoffset: 1167;
 }
