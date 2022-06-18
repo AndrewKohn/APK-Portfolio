@@ -1,7 +1,7 @@
 'use strict';
 const cursorEl = document.querySelector('.cursor');
 const startUpEl = document.querySelector(`.startup-container`);
-const startupLogoEl = document.querySelector(`.startup-logo`);
+const startupBtnEl = document.querySelector(`.startup-btn`);
 
 // Sections
 const homeSectionEl = document.querySelector(`.section--home`);
@@ -79,9 +79,9 @@ const startupClick = () => {
   }, 1000);
 };
 
-startupLogoEl.addEventListener(`mousemove`, changeBg);
-startupLogoEl.addEventListener(`mouseleave`, changeBg);
-startupLogoEl.addEventListener(`click`, startupClick);
+startupBtnEl.addEventListener(`mousemove`, changeBg);
+startupBtnEl.addEventListener(`mouseleave`, changeBg);
+startupBtnEl.addEventListener(`click`, startupClick);
 
 // /////////////// //
 // BUTTON SETTINGS //
