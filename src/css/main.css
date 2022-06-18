@@ -140,13 +140,40 @@ body {
 .startup-btn {
   font-size: 14rem;
   font-family: inherit;
-  background: rgba(34, 34, 34, 0.35);
+  background: rgba(34, 34, 34, 0.45);
   color: #e9e9eb;
   text-shadow: #e71d36 -3px 0, #5c7cfa 3px 0;
   border: none;
   position: relative;
   padding: 0 1.2rem;
   cursor: pointer;
+}
+
+.startup-btn:hover {
+  animation: darken-bg 3s ease-in;
+  background: rgba(34, 34, 34, 0.75);
+}
+
+.startup-btn:not(:hover) {
+  animation: lighten-bg 3s ease-in;
+}
+
+@keyframes darken-bg {
+  0% {
+    background: rgba(34, 34, 34, 0.45);
+  }
+  100% {
+    background: rgba(34, 34, 34, 0.75);
+  }
+}
+
+@keyframes lighten-bg {
+  0% {
+    background: rgba(34, 34, 34, 0.75);
+  }
+  100% {
+    background: rgba(34, 34, 34, 0.45);
+  }
 }
 
 .startup-btn svg,
