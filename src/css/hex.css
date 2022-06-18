@@ -1,20 +1,28 @@
 :root {
-  --hex-primary: #bdd5ea;
+  /* --hex-primary: #bdd5ea;
   --hex-dark: #577399;
   --hex-light: #f7f7ff;
   --mouse-background: #e71d36;
   --background: #fff;
+  --background-overlay-light: rgba(0, 0, 0, 0.055);
+  --background-overlay-dark: rgba(0, 0, 0, 0.625); */
+
+  --hex-primary: #3e619b;
+  --hex-dark: #42506b;
+  --hex-light: #6a90ce;
+  --mouse-background: #ef4b4c;
+  --background: #e9e9eb;
   /* --background-overlay-light: rgba(255, 255, 255, 0.055);
   --background-overlay-dark: rgba(255, 255, 255, 0.725); */
   --background-overlay-light: rgba(0, 0, 0, 0.055);
-  --background-overlay-dark: rgba(0, 0, 0, 0.625);
+  --background-overlay-dark: rgba(0, 0, 0, 0.525);
 }
 
 /* //////////// */
 /* HEX SETTINGS */
 /* //////////// */
 .hex-background {
-  /* background-color: #555; */
+  /* background-color: var(--background); */
   position: absolute;
   top: -8rem;
   left: -5.4rem;
