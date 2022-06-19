@@ -346,6 +346,13 @@ body {
   margin-top: 6rem;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fade-in 2s ease-out;
+}
+
 .text-background {
   background-color: #fefefe;
   padding: 2.4rem 3.6rem;
