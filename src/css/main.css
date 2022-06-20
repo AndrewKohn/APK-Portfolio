@@ -229,38 +229,6 @@ strong {
   stroke-dashoffset: 1167;
 }
 
-/* ///////////// */
-/* LOGO SETTINGS */
-/* ///////////// */
-.logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(50%, 50%);
-  cursor: pointer;
-  z-index: 20;
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo:hover {
-  transform: translate(50%, 50%) scale(1.05);
-}
-
-.logo:active {
-  transform: translate(50%, 50%) scale(1);
-}
-
-.logo-img {
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-}
-
 /* *************** */
 /* BUTTON SETTINGS */
 /* *************** */
@@ -446,7 +414,6 @@ strong {
   font-weight: 600;
   letter-spacing: 5px;
   color: #e9e9eb;
-  text-shadow: #e71d36 -2px 0, #5c7cfa 2px 0;
   position: absolute;
   top: 0;
   transform: translateY(-30%);
@@ -459,7 +426,6 @@ strong {
   font-weight: 400;
   letter-spacing: 5px;
   color: #e9e9eb;
-  text-shadow: #e71d36 -2px 0, #5c7cfa 2px 0;
   position: absolute;
   top: 0;
   transform: translateY(85%);
@@ -472,11 +438,11 @@ strong {
   font-size: 2rem;
   font-weight: 600;
   letter-spacing: 5px;
+  text-align: center;
   color: #e9e9eb;
-  text-shadow: #e71d36 -2px 0, #5c7cfa 2px 0;
   position: absolute;
   bottom: 0;
-  transform: translateY(-2.8rem);
+  transform: translateY(-1.2rem);
   z-index: 5;
 }
 
