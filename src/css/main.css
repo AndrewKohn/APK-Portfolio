@@ -12,6 +12,8 @@
 /* GENERAL SETTINGS */
 /* **************** */
 :root {
+  --dark-grey: #2e2e2e;
+  --light-white: #fefefe;
 }
 
 * {
@@ -29,6 +31,32 @@ body {
   font-weight: 400;
   cursor: none;
   overflow: hidden;
+}
+
+.primary-heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.secondary-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 2.5;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.strong-text {
+  font-weight: 400;
+  text-shadow: #e71d36 -1px 0, #5c7cfa 1px 0;
+}
+
+.underline-text {
+  border-bottom: 1px #222 solid;
 }
 
 /* ************* */
@@ -54,6 +82,7 @@ body {
 }
 
 .section--home {
+  /* background-color: #cec3c3; */
   background: url('../../img/mountain.webp') no-repeat;
   background-size: auto 100%;
   flex-grow: 1;
@@ -78,14 +107,13 @@ body {
 }
 
 .section-container {
-  width: 100rem;
+  width: 110rem;
   height: 100%;
   /* animation: fade-in 2s ease-out; */
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  background-color: #e71d3563;
 }
 
 /* //////////////// */
@@ -139,6 +167,7 @@ body {
 }
 
 .startup-btn {
+  min-width: 1002.94px;
   font-size: 14rem;
   font-family: inherit;
   background: rgba(34, 34, 34, 0.45);
@@ -148,15 +177,13 @@ body {
   position: relative;
   padding: 0 1.2rem;
   cursor: pointer;
+  /* transform: scale(0.6); */
+  animation: lighten-bg 0.25s ease-in;
 }
 
 .startup-btn:hover {
   animation: darken-bg 0.25s ease-in;
   background: rgba(34, 34, 34, 0.75);
-}
-
-.startup-btn:not(:hover) {
-  animation: lighten-bg 0.25s ease-in;
 }
 
 @keyframes darken-bg {
@@ -244,9 +271,9 @@ body {
   /* background-color: rgba(65, 39, 39, 0.822); */
   background-color: transparent;
   width: 15rem;
-  aspect-ratio: 1 / 1;
+  min-height: 15rem;
   border-radius: 50%;
-  margin: 10rem auto 0 auto;
+  margin: 8rem auto 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -272,6 +299,7 @@ body {
 
 .fixed-btn {
   transform: rotate(0);
+  margin-top: 2.8rem;
 }
 
 /* *************** */
@@ -342,11 +370,12 @@ body {
   justify-content: center;
   align-items: center;
   gap: 8rem;
-  background-color: rgba(0, 0, 255, 0.459);
+  margin-top: 2rem;
+  animation: fade-in 2s ease-out;
 }
 
 .flex-row:last-child {
-  margin-top: 6rem;
+  padding: 4.8rem 0 9.2rem 0;
 }
 
 .wrapper-col {
@@ -354,7 +383,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: fade-in 2s ease-out;
 }
 
 .wrapper-row {
@@ -362,13 +390,99 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  animation: fade-in 2s ease-out;
 }
 
 .text-background {
+  min-width: 32rem;
+  height: auto;
   background-color: #fefefe;
+  color: var(--dark-grey);
   padding: 2.4rem 3.6rem;
   border-radius: 9px;
   cursor: auto;
   box-shadow: 0 0 10px 6px rgba(34, 34, 34, 0.158);
+  line-height: 1.5;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+/* Date div settings */
+.date-div {
+  width: 20rem;
+  height: 20rem;
+  background-color: transparent;
+  /* border: 1px solid #eee; */
+  box-shadow: 0 0 10px 2px rgba(34, 34, 34, 0.637) inset;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  transform: translateY(45%);
+  background-color: rgba(34, 34, 34, 0.45);
+  cursor: auto;
+  animation: lighten-bg 0.25s ease-in;
+}
+
+.date-div:hover {
+  background-color: rgba(34, 34, 34, 0.75);
+  animation: darken-bg 0.25s ease-in;
+}
+
+.date-div::after {
+  content: '';
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 2px rgba(34, 34, 34, 0.411);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.current-day {
+  font-size: 3.2rem;
+  font-weight: 600;
+  letter-spacing: 5px;
+  color: #e9e9eb;
+  text-shadow: #e71d36 -2px 0, #5c7cfa 2px 0;
+  position: absolute;
+  top: 0;
+  transform: translateY(-30%);
+  overflow: hidden;
+  z-index: 5;
+}
+
+.current-date {
+  font-size: 2.8rem;
+  font-weight: 400;
+  letter-spacing: 5px;
+  color: #e9e9eb;
+  text-shadow: #e71d36 -2px 0, #5c7cfa 2px 0;
+  position: absolute;
+  top: 0;
+  transform: translateY(85%);
+  overflow: hidden;
+  z-index: 5;
+}
+
+.current-location {
+  font-family: 'Italiana';
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 5px;
+  color: #e9e9eb;
+  text-shadow: #e71d36 -2px 0, #5c7cfa 2px 0;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(-2.8rem);
+  z-index: 5;
+}
+
+.weather-icon {
+  width: 12.8rem;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  z-index: 5;
 }
