@@ -6,11 +6,11 @@
 ---------------------------------------------------------------------
 [TODO]
   HOME:
-    - Fill in section with information.
+    -  Adjust greeting with current local time.
+    -  add/remove the scroll bar when section is open/closed.
 
-        Profile picture
-        [Greeting], I am Andy!  | Front End Developer
-        dateDiv
+        Other:
+          For media queries, use transform: scale() for the name
 
               --------------
   ABOUT:
