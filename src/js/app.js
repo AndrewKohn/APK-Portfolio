@@ -26,9 +26,9 @@ const btnHomeEl = document.querySelector(`.btn-home`);
 const btnAboutEl = document.querySelector(`.btn-about`);
 const btnProjectsEl = document.querySelector(`.btn-projects`);
 const btnCtaEl = document.querySelector(`.btn-cta`);
-const logoEl = document.querySelector(`.logo`);
 const startupBtnEl = document.querySelector(`.startup-btn`);
 const btnHomeContactEl = document.querySelector(`.home-contact-btn`);
+const fixedBtnEl = document.querySelectorAll(`.fixed-btn`);
 
 // /////////////// //
 // CURSOR SETTINGS //
@@ -330,4 +330,4 @@ btnAboutEl.addEventListener(`click`, openAboutSection);
 btnProjectsEl.addEventListener(`click`, openProjectsSection);
 btnCtaEl.addEventListener(`click`, openCtaSection);
 btnHomeContactEl.addEventListener(`click`, openCtaSection);
-logoEl.addEventListener(`click`, resetSections);
+fixedBtnEl.forEach(button => button.addEventListener(`click`, resetSections));
