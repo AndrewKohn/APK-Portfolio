@@ -6,7 +6,7 @@
 ---------------------------------------------------------------------
 [TODO]
   HOME:
-    -  Adjust greeting with current local time.
+ ✅   -  Adjust greeting with current local time.
     -  add/remove the scroll bar when section is open/closed.
 
         Other:
@@ -33,20 +33,24 @@
             - Future changes I would like to make to it, looking back to it now.
             - Link to live demo / link to github files.
 
+          Other:
+
               --------------
   CTA:
     - animate submit button to show that form has been sent successfully.
 
               --------------
   Other:
-    - Remove favicon in top left and add in js: if fixed-btn clicked, then change flex grow
+✅    - Remove favicon in top left and add in js: if fixed-btn clicked, then change flex grow
+    - If dateDiv has active tokens, then display it, otherwise hide the dateDiv html elements.
+        -  Alternatively maybe find a way to automatically send an email if tokens get <100 uses left, so I can just create another free account and start over.
 
               --------------
 [NOTE]
   API's in use:
     Form submission:  https://formsubmit.co/
     Weather:          https://developer.accuweather.com/
-    Location:         https://geo.ipify.org/   (1000 use limit)
+    Location:         https://geo.ipify.org/        (1000 use limit)
 
 [FIXME]
 
