@@ -29,9 +29,15 @@
   </head>
   <body>
     <!-- remove hidden class to show start screen -->
-    <section class="startup-container hidden">
+    <section class="startup-container">
       <div class="hex-background"></div>
       <div class="hex-overlay"></div>
+      <div class="date-div">
+        <span class="current-day"></span>
+        <span class="current-location"></span>
+        <img class="weather-icon" src="" />
+        <span class="current-date">APR 23</span>
+      </div>
       <button class="startup-btn">
         <svg><rect></rect></svg> ANDREW KOHN
       </button>
@@ -59,12 +65,10 @@
             <div class="wrapper-col">
               <div class="wrapper-row">
                 <div class="text-background">
-                  <h1 class="primary-heading primary-heading--home">
-                    <span class="greeting">Good afternoon</span>,
+                  <h1 class="primary-heading">
+                    <span class="greeting">Good afternoon</span>!
                   </h1>
-                  <h1 class="primary-heading primary-heading--home">
-                    I'm Andy!
-                  </h1>
+                  <h1 class="primary-heading">I'm Andy!</h1>
                   <h2 class="secondary-heading secondary-heading--home">
                     | Front End Developer
                   </h2>
@@ -175,7 +179,22 @@
           </div>
 
           <div class="flex-row">
-            <p class="text-background">asdflkajsdflkajsdf;lkjasd;lfkjasdf</p>
+            <p class="text-background">
+              I am a <strong>Front-End Developer</strong> from Minnetonka, MN.
+              <br />I am currently transitioning into becoming a
+              <strong>Full-Stack Developer</strong>. I love the
+              <em>problem-solving</em> aspect that coding provides as it helps
+              <strong class="strong-text">advance</strong> my programming
+              knowledge, <strong class="strong-text">creates</strong> new
+              perspectives around a challenge, and
+              <strong class="strong-text">constructs</strong> new solutions. I
+              am very passionate in learning
+              <strong>Full-Stack Development</strong> technologies and how they
+              are <em>applied in real-world situations</em>. I am
+              <span class="underline-text">always motivated</span> to learn new
+              things & to collaborate with you, so feel free to
+              <button class="home-contact-btn strong-text">contact me!</button>
+            </p>
 
             <!-- Current work -->
             <div class="current-work">
