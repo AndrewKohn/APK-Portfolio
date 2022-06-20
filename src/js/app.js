@@ -1,7 +1,6 @@
 'use strict';
 const cursorEl = document.querySelector('.cursor');
 const startUpEl = document.querySelector(`.startup-container`);
-const startupBtnEl = document.querySelector(`.startup-btn`);
 
 // Sections
 const homeSectionEl = document.querySelector(`.section--home`);
@@ -28,6 +27,8 @@ const btnAboutEl = document.querySelector(`.btn-about`);
 const btnProjectsEl = document.querySelector(`.btn-projects`);
 const btnCtaEl = document.querySelector(`.btn-cta`);
 const logoEl = document.querySelector(`.logo`);
+const startupBtnEl = document.querySelector(`.startup-btn`);
+const btnHomeContactEl = document.querySelector(`.home-contact-btn`);
 
 // /////////////// //
 // CURSOR SETTINGS //
@@ -53,8 +54,8 @@ const buttonHover = function (e) {
 // Allows page cursor to follow user's cursor position.
 const editCursor = e => {
   const { clientX: x, clientY: y } = e;
-  cursorEl.style.left = x + 'px';
-  cursorEl.style.top = y + 'px';
+  cursorEl.style.left = x - 7 + 'px';
+  cursorEl.style.top = y - 7 + 'px';
 };
 
 btnEl.forEach(button => button.addEventListener('mousemove', buttonHover));
@@ -240,7 +241,10 @@ const openProjectsSection = button => {
 };
 
 const openCtaSection = button => {
-  if (button.target.classList.contains(`btn-cta`)) {
+  if (
+    button.target.classList.contains(`btn-cta`) ||
+    button.target.classList.contains(`home-contact-btn`)
+  ) {
     // Changes opening/closing animation respectively
     if (aboutSectionEl.classList.contains(`anim--open-section`)) {
       aboutSectionEl.classList.remove(`anim--open-section`);
@@ -287,6 +291,7 @@ const openCtaSection = button => {
     ctaSectionContainerEl.classList.remove(`hidden`);
 
     console.error(`Something went wrong with the CTA Button action...`);
+    console.log(button.target);
   }
 };
 
@@ -324,4 +329,5 @@ btnHomeEl.addEventListener(`click`, openHomeSection);
 btnAboutEl.addEventListener(`click`, openAboutSection);
 btnProjectsEl.addEventListener(`click`, openProjectsSection);
 btnCtaEl.addEventListener(`click`, openCtaSection);
+btnHomeContactEl.addEventListener(`click`, openCtaSection);
 logoEl.addEventListener(`click`, resetSections);
