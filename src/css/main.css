@@ -374,6 +374,71 @@ strong {
   letter-spacing: 1px;
 }
 
+.portfolio-code-link {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(-0.8rem);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: var(--dark-grey);
+  padding: 5px 7px;
+  border-radius: 13px;
+  filter: opacity(0.3);
+  animation: slide-up 2s ease-out;
+}
+
+.portfolio-code-icon {
+  color: var(--light-white);
+  width: 4rem;
+  height: 4rem;
+}
+
+.portfolio-code-link div {
+  position: absolute;
+  width: 1.8rem;
+  height: 1.8rem;
+  bottom: 0;
+  transform: translateY(-1.6rem);
+  background-color: var(--dark-grey);
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.portfolio-code-icon--github {
+  color: var(--light-white);
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.portfolio-code-link:hover {
+  background-color: var(--light-white);
+  border-bottom: var(--dark-grey) 3px solid;
+  filter: opacity(1);
+}
+
+.portfolio-code-link:hover div {
+  background-color: var(--light-white);
+}
+
+.portfolio-code-link:hover .portfolio-code-icon {
+  color: var(--dark-grey);
+}
+
+.portfolio-code-link:hover div .portfolio-code-icon--github {
+  color: var(--dark-grey);
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(12rem);
+  }
+  100% {
+    transform: translateY(-0.8rem);
+  }
+}
+
 /* Date div settings */
 .date-div {
   width: 20rem;

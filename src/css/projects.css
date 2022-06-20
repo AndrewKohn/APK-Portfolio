@@ -1,5 +1,11 @@
-.section--projects .section-container {
+.section--projects {
   overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.section--projects .section-container {
+  overflow: hidden;
+  position: relative;
 }
 
 .projects-grid {
