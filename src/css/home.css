@@ -5,6 +5,7 @@
 /* /////////////// */
 .section--home {
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .section--home .section-container {
