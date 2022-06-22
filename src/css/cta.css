@@ -1,8 +1,9 @@
+/* ******************** */
+/* CTA SECTION SETTINGS */
+/* ******************** */
 .section--cta .section-container {
 }
-/* //////////// */
-/* CTA SETTINGS */
-/* //////////// */
+
 .cta-socials-wrapper {
   margin: 7.2rem auto 0 auto;
   display: flex;
