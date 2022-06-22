@@ -44,10 +44,18 @@ const buttonHover = function (e) {
 
   btnTextEl.style.transform = `translate(${xMove}px, ${yMove}px)`;
   cursorEl.style.transform = `translate(-50%, -50%) scale(4)`;
+  cursorEl.style.mixBlendMode = `normal`;
+  cursorEl.style.backgroundColor = `#222`;
+  cursorEl.style.border = `none`;
+  cursorEl.style.animation = `pulse-dark 2s infinite`;
 
   if (e.type === 'mouseleave') {
     btnTextEl.style.transform = ``;
     cursorEl.style.transform = ``;
+    cursorEl.style.mixBlendMode = `difference`;
+    cursorEl.style.backgroundColor = `#fff`;
+    cursorEl.style.border = `#fefefe 1px solid`;
+    cursorEl.style.animation = `pulse 2s infinite`;
   }
 };
 
@@ -65,12 +73,6 @@ window.addEventListener('mousemove', editCursor);
 // //////////////// //
 // STARTUP SETTINGS //
 // //////////////// //
-const changeBg = e => {
-  startUpEl.style.backgroundColor = '#fefefeef';
-
-  if (e.type === `mouseleave`)
-    startUpEl.style.backgroundColor = `rgba(254, 254, 254, 0.99)`;
-};
 
 const startupClick = () => {
   startUpEl.classList.add('anim--fade-out');
@@ -78,10 +80,37 @@ const startupClick = () => {
   setTimeout(() => {
     startUpEl.classList.add('hidden');
   }, 1000);
+
+  setTimeout(() => {
+    homeSectionEl.classList.remove(`anim--close-section`);
+    homeSectionEl.classList.add(`anim--open-section`);
+    btnHomeEl.classList.add(`hidden`);
+
+    // Adjusts flexGow of each section
+    homeSectionEl.style.flexGrow = `20`;
+    aboutSectionEl.style.flexGrow = `1`;
+    projectsSectionEl.style.flexGrow = `1`;
+    ctaSectionEl.style.flexGrow = `1`;
+
+    // Changes container visibility
+    homeSectionContainerEl.classList.remove(`hidden`);
+    aboutSectionContainerEl.classList.add(`hidden`);
+    projectsSectionContainerEl.classList.add(`hidden`);
+    ctaSectionContainerEl.classList.add(`hidden`);
+
+    // Returns other buttons to original states.
+    if (
+      btnAboutEl.classList.contains(`hidden`) ||
+      btnProjectsEl.classList.contains(`hidden`) ||
+      btnCtaEl.classList.contains(`hidden`)
+    ) {
+      btnAboutEl.classList.remove(`hidden`);
+      btnProjectsEl.classList.remove(`hidden`);
+      btnCtaEl.classList.remove(`hidden`);
+    }
+  }, 1350);
 };
 
-startupBtnEl.addEventListener(`mousemove`, changeBg);
-startupBtnEl.addEventListener(`mouseleave`, changeBg);
 startupBtnEl.addEventListener(`click`, startupClick);
 
 // /////////////// //
