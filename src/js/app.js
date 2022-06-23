@@ -45,7 +45,7 @@ const buttonHover = function (e) {
   btnTextEl.style.transform = `translate(${xMove}px, ${yMove}px)`;
   cursorEl.style.transform = `translate(-50%, -50%) scale(4)`;
   cursorEl.style.mixBlendMode = `normal`;
-  cursorEl.style.backgroundColor = `#222`;
+  cursorEl.style.backgroundColor = `#4e4e4e`;
   cursorEl.style.border = `none`;
   cursorEl.style.animation = `pulse-dark 2s infinite`;
 
