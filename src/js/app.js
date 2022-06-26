@@ -30,6 +30,13 @@ const startupBtnEl = document.querySelector(`.startup-btn`);
 const btnHomeContactEl = document.querySelector(`.home-contact-btn`);
 const fixedBtnEl = document.querySelectorAll(`.fixed-btn`);
 
+// Projects Grid
+const overlayEl = document.querySelector(`.overlay`);
+const modalEl = document.querySelector(`.modal`);
+const gridItemEl = document.querySelectorAll(`.grid-item`);
+
+////////////////////////////////////////////////////////////
+
 // /////////////// //
 // CURSOR SETTINGS //
 // /////////////// //
@@ -69,6 +76,8 @@ const editCursor = e => {
 btnEl.forEach(button => button.addEventListener('mousemove', buttonHover));
 btnEl.forEach(button => button.addEventListener('mouseleave', buttonHover));
 window.addEventListener('mousemove', editCursor);
+
+////////////////////////////////////////////////////////////
 
 // //////////////// //
 // STARTUP SETTINGS //
@@ -112,6 +121,8 @@ const startupClick = () => {
 };
 
 startupBtnEl.addEventListener(`click`, startupClick);
+
+////////////////////////////////////////////////////////////
 
 // /////////////// //
 // BUTTON SETTINGS //
@@ -360,3 +371,219 @@ btnProjectsEl.addEventListener(`click`, openProjectsSection);
 btnCtaEl.addEventListener(`click`, openCtaSection);
 btnHomeContactEl.addEventListener(`click`, openCtaSection);
 fixedBtnEl.forEach(button => button.addEventListener(`click`, resetSections));
+
+////////////////////////////////////////////////////////////
+
+// ////////////// //
+// MODAL SETTINGS //
+// ////////////// //
+const toggleModal = function () {
+  overlayEl.classList.toggle(`hidden`);
+  modalEl.classList.toggle(`hidden`);
+};
+
+const editModalHTML = function (gridItem) {
+  let html = ``;
+  modalEl.innerHTML = ``;
+
+  console.log(gridItem);
+  switch (gridItem) {
+    case 0: {
+      html = `
+        <h1 class="modal-heading">Covid Map Tracker</h1>
+        <img
+          class="modal-img"
+          src="../img/photos/covid-tracker-sample.png"
+        />
+
+        <div class="modal-information">
+          <p class="modal-text">
+            This project was created to show a heatmap of sorts regarding daily
+            confirmed COVID-19 cases in the US.
+          </p>
+
+          <p class="modal-text">
+            My goal for this project was to learn and implement fetching API
+            data and visualizing to an interactive map.
+          </p>
+
+          <p class="modal-text">
+            The setbacks I encountered while working on this project was
+            that I got too excited on focusing on the details first. I could
+            have saved time by making sure each state was representing the
+            correct confirmed number of cases rather than jumping ahead and
+            trying to add county information while there was ongoing issues
+            viewing the map.
+          </p>
+
+          <p class="modal-text">
+            This project did give me insight with API's and gathering &
+            manipulating data fetched from outside sources. I also got to
+            play with all sorts of graphs and searched through their API
+            documention on how to edit the graph settings.
+          </p>
+        </div>
+
+        <div class="modal-link-wrapper">
+          <a class="modal-link" href="https://github.com/AndrewKohn/Coronavirus-data-chart" target="_blank" title="Live demo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="modal-icon"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+              <path
+                fill-rule="evenodd"
+                d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+
+          <a
+            class="modal-link"
+            href="#"
+            target="_blank"
+            title="Covid Map Tracker Repository"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="modal-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+              />
+            </svg>
+          </a>
+        </div>
+      `;
+      break;
+    }
+
+    case 1: {
+      html = `
+        <h1 class="modal-heading">MGH Menu</h1>
+        <img class="modal-img" src="../img/photos/mgh-menu-sample.png" />
+
+        <div class="modal-information">
+          <p class="modal-text">
+            This project was created to assist staff at an Residential
+            Assisted Living Facility on daily menus through out the month.
+          </p>
+
+          <p class="modal-text">
+            My goal for this project was to help minimize grocery store
+            trips and lower costs. No menu structure may allow staff to run
+            out one type of ingredient faster than others. With this menu,
+            staff can easily coordinate with house managers on necessary
+            grocery list items and not worry about what they need to make
+            during their busy work schedule.
+          </p>
+
+          <p class="modal-text">
+            I currently have a submission where staff, RN's, or house
+            managers can submit menu items and the submission will email me
+            an html code of arrays that i can plug and play into menu.js
+            within the repository to easily implement new menus, if need be.
+          </p>
+
+          <p class="modal-text">
+            This project allowed me to perform html insertions within
+            JavaScript and work with a free email-submission API for menu
+            submissions.
+          </p>
+        </div>
+
+        <div class="modal-link-wrapper">
+          <a
+            class="modal-link"
+            href="https://mghmenu.netlify.app/"
+            target="_blank"
+            title="Live demo"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="modal-icon"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+              <path
+                fill-rule="evenodd"
+                d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+
+          <a
+            class="modal-link"
+            href="https://github.com/AndrewKohn/MGH-menu"
+            target="_blank"
+            title="Covid Map Tracker Repository"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="modal-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+              />
+            </svg>
+          </a>
+        </div>
+      `;
+      break;
+    }
+
+    case 2: {
+      html = `griditem = 3`;
+      break;
+    }
+
+    case 3: {
+      html = `griditem = 4`;
+      break;
+    }
+
+    case 4: {
+      html = `griditem = 5`;
+      break;
+    }
+
+    case 5: {
+      html = `griditem = 6`;
+      break;
+    }
+
+    default: {
+      console.error(`Error on switch statement of editModalHTML`);
+      break;
+    }
+  }
+
+  console.log(html);
+  modalEl.insertAdjacentHTML(`afterbegin`, html);
+};
+
+gridItemEl.forEach(button =>
+  button.addEventListener(`click`, e => {
+    // console.log(Number(String(e.target.id).split(`--`)[1]));
+    editModalHTML(Number(String(e.target.id).split(`--`)[1]));
+    toggleModal();
+  })
+);
+overlayEl.addEventListener(`click`, toggleModal);
