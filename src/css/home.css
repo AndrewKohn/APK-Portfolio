@@ -24,6 +24,10 @@
   border-radius: 9px 0 9px 9px;
 }
 
+.section-container--home .flex-row:last-child {
+  padding: 4.8rem 0 9.2rem 0;
+}
+
 .section-container--home .flex-row .wrapper-col {
   gap: 3.2rem;
   align-items: flex-end;

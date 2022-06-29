@@ -308,11 +308,12 @@ strong {
   gap: 8rem;
   margin-top: 2rem;
   animation: fade-in 2s ease-out;
+  /* background-color: rgba(0, 0, 255, 0.425); */
 }
-
+/* 
 .flex-row:last-child {
   padding: 4.8rem 0 9.2rem 0;
-}
+} */
 
 .wrapper-col {
   display: flex;
@@ -340,6 +341,7 @@ strong {
   line-height: 1.5;
   font-size: 1.8rem;
   letter-spacing: 1px;
+  z-index: 10;
 }
 
 /* Date div settings */
