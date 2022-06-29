@@ -9,17 +9,18 @@
 .section--about .section-container {
 }
 
-.about-wrapper {
-  width: 100rem;
-  z-index: 5;
-  margin: 8rem auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  /* background-color: brown; */
+.section-container--about .flex-row .img-square {
+  filter: brightness(1.1) contrast(0.85) saturate(1.2);
 }
 
-.about-wrapper .flex-row .img-square {
-  filter: brightness(1.1) contrast(0.85) saturate(1.2);
+.section-container--about .flex-row:nth-child(3) {
+  padding-top: 2.4rem;
+}
+
+.section-container--about .flex-row:nth-child(4) {
+  padding-top: 4.8rem;
+}
+
+.section-container--about .flex-row:last-child {
+  padding: 4.8rem 0 9.2rem 0;
 }
