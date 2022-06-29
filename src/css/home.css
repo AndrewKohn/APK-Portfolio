@@ -4,8 +4,8 @@
 
 /* /////////////// */
 .section--home {
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-y: auto;
+  overflow-x: auto;
 }
 
 .section--home .section-container {

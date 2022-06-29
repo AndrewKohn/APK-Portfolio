@@ -2,7 +2,8 @@
 /* PROJECTS SECTION SETTINGS */
 /* ************************* */
 .section--projects {
-  overflow-y: scroll;
+  overflow-y: auto;
+  overflow-x: auto;
 }
 
 .section--projects .section-container {
