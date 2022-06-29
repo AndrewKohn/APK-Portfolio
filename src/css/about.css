@@ -1,8 +1,12 @@
 /* ********************** */
 /* ABOUT SECTION SETTINGS */
 /* ********************** */
+.section--about {
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
 .section--about .section-container {
-  overflow-y: scroll;
 }
 
 .about-wrapper {

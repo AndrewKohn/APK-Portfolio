@@ -2,6 +2,8 @@
 /* PROJECTS SECTION SETTINGS */
 /* ************************* */
 .section--projects {
+  overflow-y: auto;
+  overflow-x: auto;
 }
 
 .section--projects .section-container {

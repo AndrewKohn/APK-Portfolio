@@ -1,6 +1,11 @@
 /* ******************** */
 /* CTA SECTION SETTINGS */
 /* ******************** */
+.section--cta {
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
 .section--cta .section-container {
 }
 
