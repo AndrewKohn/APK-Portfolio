@@ -21,6 +21,8 @@
 
 .wrapper-row .text-background {
   border-radius: 9px 0 9px 9px;
+  box-shadow: 0 0 10px 10px rgba(34, 34, 34, 0.55);
+  z-index: 1;
 }
 
 .section-container--home .flex-row:last-child {
@@ -33,6 +35,8 @@
 }
 
 .socials-wrapper {
+  box-shadow: 10px -10px 10px 0 rgba(34, 34, 34, 0.55);
+  border-radius: 0 13px 13px 0;
   align-self: flex-start;
   z-index: 5;
 }
