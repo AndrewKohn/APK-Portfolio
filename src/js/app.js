@@ -386,7 +386,6 @@ const editModalHTML = function (gridItem) {
   let html = ``;
   modalEl.innerHTML = ``;
 
-  console.log(gridItem);
   switch (gridItem) {
     case 0: {
       html = `
@@ -527,7 +526,7 @@ const editModalHTML = function (gridItem) {
             class="modal-link"
             href="https://github.com/AndrewKohn/MGH-menu"
             target="_blank"
-            title="Covid Map Tracker Repository"
+            title="MGH Menu Repository"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -550,22 +549,315 @@ const editModalHTML = function (gridItem) {
     }
 
     case 2: {
-      html = `griditem = 3`;
+      html = `
+        <h1 class="modal-heading">Coding Time Tracker</h1>
+        <img
+          class="modal-img"
+          src="../img/photos/coding-time-tracker-sample.png"
+        />
+
+        <div class="modal-information">
+          <p class="modal-text">
+            This project was made in Java to create a log history of time
+            spent programming.
+          </p>
+
+          <p class="modal-text">
+            My goal for this project was to implement a GUI and have the
+            application as a program where it can read times logged in/out
+            and helps me give a general idea to my coding habits.
+          </p>
+
+          <p class="modal-text">
+            This was essentially my first personal project I chose that I
+            wanted to bring myself out of my comfort zone. It helped me work
+            on my try-catch statements, file manipulation & pathing, timers,
+            and action events. It also introduced me to Java Swing, Java
+            AWT, & JavaFX for the GUI.
+          </p>
+        </div>
+
+        <div class="modal-link-wrapper">
+          <a
+            class="modal-link disabled-link"
+            href="#"
+            target="_blank"
+            title="Live demo"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="modal-icon"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3.707 2.293a1 1 0 00-1.414 1.414l14 14a1 1 0 001.414-1.414l-1.473-1.473A10.014 10.014 0 0019.542 10C18.268 5.943 14.478 3 10 3a9.958 9.958 0 00-4.512 1.074l-1.78-1.781zm4.261 4.26l1.514 1.515a2.003 2.003 0 012.45 2.45l1.514 1.514a4 4 0 00-5.478-5.478z"
+                clip-rule="evenodd"
+              />
+              <path
+                d="M12.454 16.697L9.75 13.992a4 4 0 01-3.742-3.741L2.335 6.578A9.98 9.98 0 00.458 10c1.274 4.057 5.065 7 9.542 7 .847 0 1.669-.105 2.454-.303z"
+              />
+            </svg>
+          </a>
+
+          <a
+            class="modal-link"
+            href="https://github.com/AndrewKohn/MyCodingTracker"
+            target="_blank"
+            title="Coding Time Tracker Repository"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="modal-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+              />
+            </svg>
+          </a>
+        </div>
+      `;
       break;
     }
 
     case 3: {
-      html = `griditem = 4`;
+      html = `
+        <h1 class="modal-heading">Loop Studios Landing Page</h1>
+        <img
+          class="modal-img"
+          src="../img/photos/loop-studios-sample.jpg"
+        />
+
+        <div class="modal-information">
+          <p class="modal-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Asperiores, laboriosam ipsum debitis tempora assumenda
+            architecto! Autem sint excepturi beatae maxime voluptatem sequi
+            amet eaque nostrum, vero illo iste ipsam officia!
+          </p>
+
+          <p class="modal-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Asperiores, laboriosam ipsum debitis tempora assumenda
+            architecto! Autem sint excepturi beatae maxime voluptatem sequi
+            amet eaque nostrum, vero illo iste ipsam officia!
+          </p>
+
+          <p class="modal-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Asperiores, laboriosam ipsum debitis tempora assumenda
+            architecto! Autem sint excepturi beatae maxime voluptatem sequi
+            amet eaque nostrum, vero illo iste ipsam officia!
+          </p>
+        </div>
+
+        <div class="modal-link-wrapper">
+          <a
+            class="modal-link"
+            href="https://apk-loopstudios.netlify.app/"
+            target="_blank"
+            title="Live demo"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="modal-icon"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+              <path
+                fill-rule="evenodd"
+                d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+
+          <a
+            class="modal-link"
+            href="https://github.com/AndrewKohn/loopstudios-landing-page"
+            target="_blank"
+            title="Loop Studios Landing Page Repository"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="modal-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+              />
+            </svg>
+          </a>
+        </div>
+      `;
       break;
     }
 
     case 4: {
-      html = `griditem = 5`;
+      html = `
+        <h1 class="modal-heading">Coding Countdown</h1>
+        <img
+          class="modal-img"
+          src="../img/photos/coding-countdown-sample.png"
+        />
+
+        <div class="modal-information">
+          <p class="modal-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Asperiores, laboriosam ipsum debitis tempora assumenda
+            architecto! Autem sint excepturi beatae maxime voluptatem sequi
+            amet eaque nostrum, vero illo iste ipsam officia!
+          </p>
+
+          <p class="modal-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Asperiores, laboriosam ipsum debitis tempora assumenda
+            architecto! Autem sint excepturi beatae maxime voluptatem sequi
+            amet eaque nostrum, vero illo iste ipsam officia!
+          </p>
+
+          <p class="modal-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Asperiores, laboriosam ipsum debitis tempora assumenda
+            architecto! Autem sint excepturi beatae maxime voluptatem sequi
+            amet eaque nostrum, vero illo iste ipsam officia!
+          </p>
+        </div>
+
+        <div class="modal-link-wrapper">
+          <a
+            class="modal-link"
+            href="https://apk-coding-countdown.netlify.app/"
+            target="_blank"
+            title="Live demo"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="modal-icon"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+              <path
+                fill-rule="evenodd"
+                d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+
+          <a
+            class="modal-link"
+            href="https://github.com/AndrewKohn/Coding-Countdown"
+            target="_blank"
+            title="Loop Studios Landing Page Repository"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="modal-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+              />
+            </svg>
+          </a>
+      </div>
+      `;
       break;
     }
 
     case 5: {
-      html = `griditem = 6`;
+      html = `
+        <h1 class="modal-heading">Note Taker</h1>
+        <img class="modal-img" src="../img/photos/note-taker-sample.png" />
+
+        <div class="modal-information">
+          <p class="modal-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Asperiores, laboriosam ipsum debitis tempora assumenda
+            architecto! Autem sint excepturi beatae maxime voluptatem sequi
+            amet eaque nostrum, vero illo iste ipsam officia!
+          </p>
+
+          <p class="modal-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Asperiores, laboriosam ipsum debitis tempora assumenda
+            architecto! Autem sint excepturi beatae maxime voluptatem sequi
+            amet eaque nostrum, vero illo iste ipsam officia!
+          </p>
+
+          <p class="modal-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Asperiores, laboriosam ipsum debitis tempora assumenda
+            architecto! Autem sint excepturi beatae maxime voluptatem sequi
+            amet eaque nostrum, vero illo iste ipsam officia!
+          </p>
+        </div>
+
+        <div class="modal-link-wrapper">
+          <a
+            class="modal-link"
+            href="https://apk-note-taker.netlify.app/"
+            target="_blank"
+            title="Live demo"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="modal-icon"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+              <path
+                fill-rule="evenodd"
+                d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+
+          <a
+            class="modal-link"
+            href="https://github.com/AndrewKohn/Note-Taker"
+            target="_blank"
+            title="Note Taker Repository"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="modal-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+              />
+            </svg>
+          </a>
+        </div>
+      `;
       break;
     }
 
@@ -574,14 +866,11 @@ const editModalHTML = function (gridItem) {
       break;
     }
   }
-
-  console.log(html);
   modalEl.insertAdjacentHTML(`afterbegin`, html);
 };
 
 gridItemEl.forEach(button =>
   button.addEventListener(`click`, e => {
-    // console.log(Number(String(e.target.id).split(`--`)[1]));
     editModalHTML(Number(String(e.target.id).split(`--`)[1]));
     toggleModal();
   })
