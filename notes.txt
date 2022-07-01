@@ -6,32 +6,37 @@
 ---------------------------------------------------------------------
 [TODO]
   HOME:
- ✅   -  Adjust greeting with current local time.
-    -  add/remove the scroll bar when section is open/closed.
+  ✅  -  Adjust greeting with current local time.
+  ✅  -  add/remove the scroll bar when section is open/closed.
 
         Other:
           For media queries, use transform: scale() for the name
 
               --------------
   ABOUT:
-    - Fill in section with information.
+  ✅  - Fill in section with information.
 
         Quick about me.
         Skills
         Job History that correlates with developement.
 
+        Other:
+          - Two buttons: Core Skills, Additional Skills
+            - Core skills are comfortable skillset without or with minimal outside assistance.
+            - Additional skills can be skills currently learning.
+
               --------------
   PROJECTS:
-    - Fill in section with information.
+  ✅  - Fill in section with information.
 
         projects grid
-          -upon selection, popup window opens.  Click [X] or outside to minimize.
-          - project details should include:
-            - Goal of project
-            - Duration
-            - Challenges/hurdles and how it was overcome
-            - Future changes I would like to make to it, looking back to it now.
-            - Link to live demo / link to github files.
+  ✅        -upon selection, popup window opens.  Click [X] or outside to minimize.
+  ✅        - project details should include:
+  ✅          - Goal of project
+  ✅          - Duration
+  ✅          - Challenges/hurdles and how it was overcome
+  ✅          - Future changes I would like to make to it, looking back to it now.
+  ✅          - Link to live demo / link to github files.
 
           Other:
 
