@@ -25,6 +25,9 @@
             - Core skills are comfortable skillset without or with minimal outside assistance.
             - Additional skills can be skills currently learning.
 
+                HTML, CSS, JS, SASS, React, NodeJs, TypeScript, WordPress, Git,
+                Github, BootStrap, NextJs, php, SQL, Python, Java,
+
               --------------
   PROJECTS:
   ✅  - Fill in section with information.
