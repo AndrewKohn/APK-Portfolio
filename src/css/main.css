@@ -284,18 +284,19 @@ strong {
 .img {
   border-radius: 17px;
   cursor: auto;
+  background-color: var(--bg-1);
 }
 
 .img-square {
   width: 35rem;
   aspect-ratio: 1 / 1;
-  box-shadow: 10px 10px 0 0 red;
+  box-shadow: 10px 10px 0 0 var(--bg-2);
 }
 
 .img-portrait {
   width: 35rem;
   aspect-ratio: 2 / 3;
-  box-shadow: 10px 10px 0 0 red;
+  box-shadow: 10px 10px 0 0 var(--bg-2);
 }
 
 /* //// */
