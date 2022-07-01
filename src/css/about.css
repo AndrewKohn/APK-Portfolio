@@ -24,3 +24,12 @@
 .section-container--about .flex-row:last-child {
   padding: 4.8rem 0 9.2rem 0;
 }
+
+.text-background ul {
+  list-style: circle;
+  margin-top: 2.4rem;
+}
+
+.text-background ul li {
+  margin-left: 4rem;
+}
