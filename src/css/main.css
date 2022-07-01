@@ -338,7 +338,7 @@ strong {
   padding: 2.4rem 3.6rem;
   border-radius: 9px;
   cursor: auto;
-  box-shadow: 0 0 10px 6px rgba(34, 34, 34, 0.158);
+  box-shadow: 0 0 10px 16px rgba(34, 34, 34, 0.35);
   line-height: 1.5;
   font-size: 1.8rem;
   letter-spacing: 1px;
