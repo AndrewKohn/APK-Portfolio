@@ -9,7 +9,7 @@
 .section--about .section-container {
 }
 
-.section-container--about .flex-row .img-square {
+.section-container--about .flex-row .img {
   filter: brightness(1.1) contrast(0.85) saturate(1.2);
 }
 
@@ -32,4 +32,54 @@
 
 .text-background ul li {
   margin-left: 4rem;
+}
+
+/* Skillset Icons */
+.skills-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.8rem;
+}
+
+.skills-btn {
+  padding: 1.2rem 2rem;
+  border: none;
+  background: none;
+  border-radius: 11px;
+  background-color: var(--dark-grey);
+  color: var(--light-white);
+  font-family: inherit, sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.skills-btn:hover {
+  background-color: var(--bg-2);
+}
+
+.skills-btn:active {
+  transform: scale(0.95);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.2rem;
+  margin-top: 3.2rem;
+}
+
+.skill-icon {
+  height: 6rem;
+  width: auto;
+  filter: grayscale(0.5) blur(2px) brightness(0.85);
+  transform: scale(0.85);
+  animation: scale--down 2s ease-out;
+}
+
+.highlighted-skill {
+  filter: grayscale(0) blur(0) brightness(1);
+  transform: scale(1.15);
+  animation: scale--up 2s ease-out;
 }
