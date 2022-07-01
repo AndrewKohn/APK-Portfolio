@@ -921,11 +921,15 @@ const highlightAdditionalSkills = function () {
 coreSkillsBtn.addEventListener(`click`, function () {
   highlightCoreSkills();
   coreSkillsBtn.style.backgroundColor = `var(--bg-2)`;
+  coreSkillsBtn.style.color = `var(--light-white)`;
   additionalSkillsBtn.style.backgroundColor = `var(--dark-grey)`;
+  additionalSkillsBtn.style.color = `#bbb`;
 });
 
 additionalSkillsBtn.addEventListener(`click`, function () {
   highlightAdditionalSkills();
   additionalSkillsBtn.style.backgroundColor = `var(--bg-2)`;
+  additionalSkillsBtn.style.color = `var(--light-white)`;
   coreSkillsBtn.style.backgroundColor = `var(--dark-grey)`;
+  coreSkillsBtn.style.color = `#bbb`;
 });
