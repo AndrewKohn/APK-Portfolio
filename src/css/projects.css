@@ -147,7 +147,7 @@
   background-color: var(--dark-grey);
   padding: 5px 7px;
   border-radius: 13px;
-  filter: opacity(0.3);
+  filter: opacity(0.6);
   animation: slide-up 1.25s ease-out;
 }
 

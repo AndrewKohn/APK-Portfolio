@@ -284,18 +284,19 @@ strong {
 .img {
   border-radius: 17px;
   cursor: auto;
+  background-color: var(--bg-1);
 }
 
 .img-square {
   width: 35rem;
   aspect-ratio: 1 / 1;
-  box-shadow: 10px 10px 0 0 red;
+  box-shadow: 10px 10px 0 0 var(--bg-2);
 }
 
 .img-portrait {
   width: 35rem;
   aspect-ratio: 2 / 3;
-  box-shadow: 10px 10px 0 0 red;
+  box-shadow: 10px 10px 0 0 var(--bg-2);
 }
 
 /* //// */
@@ -308,11 +309,12 @@ strong {
   gap: 8rem;
   margin-top: 2rem;
   animation: fade-in 2s ease-out;
+  /* background-color: rgba(0, 0, 255, 0.425); */
 }
-
+/* 
 .flex-row:last-child {
   padding: 4.8rem 0 9.2rem 0;
-}
+} */
 
 .wrapper-col {
   display: flex;
@@ -336,10 +338,11 @@ strong {
   padding: 2.4rem 3.6rem;
   border-radius: 9px;
   cursor: auto;
-  box-shadow: 0 0 10px 6px rgba(34, 34, 34, 0.158);
+  box-shadow: 0 0 10px 16px rgba(34, 34, 34, 0.35);
   line-height: 1.5;
   font-size: 1.8rem;
   letter-spacing: 1px;
+  z-index: 10;
 }
 
 /* Date div settings */

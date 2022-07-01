@@ -207,3 +207,21 @@
     box-shadow: 0 0 20px 8px rgba(20, 20, 20, 0.75);
   }
 }
+
+@keyframes scale--up {
+  0% {
+    transform: scale(0.85);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+@keyframes scale--down {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.85);
+  }
+}

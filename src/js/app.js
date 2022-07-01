@@ -29,6 +29,8 @@ const btnCtaEl = document.querySelector(`.btn-cta`);
 const startupBtnEl = document.querySelector(`.startup-btn`);
 const btnHomeContactEl = document.querySelector(`.home-contact-btn`);
 const fixedBtnEl = document.querySelectorAll(`.fixed-btn`);
+const coreSkillsBtn = document.querySelector(`.core-skills-btn`);
+const additionalSkillsBtn = document.querySelector(`.additional-skills-btn`);
 
 // Projects Grid
 const overlayEl = document.querySelector(`.overlay`);
@@ -51,8 +53,8 @@ const buttonHover = function (e) {
 
   btnTextEl.style.transform = `translate(${xMove}px, ${yMove}px)`;
   cursorEl.style.transform = `translate(-50%, -50%) scale(4)`;
-  cursorEl.style.mixBlendMode = `normal`;
-  cursorEl.style.backgroundColor = `#4e4e4e`;
+  cursorEl.style.mixBlendMode = `difference`;
+  cursorEl.style.backgroundColor = `violet`;
   cursorEl.style.border = `none`;
   cursorEl.style.animation = `pulse-dark 2s infinite`;
 
@@ -876,3 +878,58 @@ gridItemEl.forEach(button =>
   })
 );
 overlayEl.addEventListener(`click`, toggleModal);
+
+////////////////////////////////////////////////////////////
+
+// ///////////////////// //
+// ABOUT SKILLS SETTINGS //
+// ///////////////////// //
+const skillChildNodes = document.querySelector(`.skills-grid`).childNodes;
+
+const highlightCoreSkills = function () {
+  for (let i = 1; i < skillChildNodes.length; i += 2) {
+    if (
+      skillChildNodes[i].classList.contains(`core-skill`) &&
+      !skillChildNodes[i].classList.contains(`highlighted-skill`)
+    ) {
+      skillChildNodes[i].classList.toggle(`highlighted-skill`);
+    } else if (
+      !skillChildNodes[i].classList.contains(`core-skill`) &&
+      skillChildNodes[i].classList.contains(`highlighted-skill`)
+    ) {
+      skillChildNodes[i].classList.toggle(`highlighted-skill`);
+    }
+  }
+};
+
+const highlightAdditionalSkills = function () {
+  for (let i = 1; i < skillChildNodes.length; i += 2) {
+    if (
+      skillChildNodes[i].classList.contains(`core-skill`) &&
+      skillChildNodes[i].classList.contains(`highlighted-skill`)
+    ) {
+      skillChildNodes[i].classList.toggle(`highlighted-skill`);
+    } else if (
+      !skillChildNodes[i].classList.contains(`core-skill`) &&
+      !skillChildNodes[i].classList.contains(`highlighted-skill`)
+    ) {
+      skillChildNodes[i].classList.toggle(`highlighted-skill`);
+    }
+  }
+};
+
+coreSkillsBtn.addEventListener(`click`, function () {
+  highlightCoreSkills();
+  coreSkillsBtn.style.backgroundColor = `var(--bg-2)`;
+  coreSkillsBtn.style.color = `var(--light-white)`;
+  additionalSkillsBtn.style.backgroundColor = `var(--dark-grey)`;
+  additionalSkillsBtn.style.color = `#bbb`;
+});
+
+additionalSkillsBtn.addEventListener(`click`, function () {
+  highlightAdditionalSkills();
+  additionalSkillsBtn.style.backgroundColor = `var(--bg-2)`;
+  additionalSkillsBtn.style.color = `var(--light-white)`;
+  coreSkillsBtn.style.backgroundColor = `var(--dark-grey)`;
+  coreSkillsBtn.style.color = `#bbb`;
+});
