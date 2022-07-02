@@ -42,6 +42,7 @@
   ✅          - Link to live demo / link to github files.
 
           Other:
+          Modal cause
 
               --------------
   CTA:
@@ -61,5 +62,10 @@
     Location:         https://geo.ipify.org/        (1000 use limit)
 
 [FIXME]
+ABOUT:
+    - Opening section is a bit choppy
+
+PROJECTS:
+    - Scrolling only in modal popup.  Scrolling in modal overlay not possible.
 
 [BUG]
