@@ -3,12 +3,29 @@ const startupContainerEl = document.querySelector(`.startup-container`);
 const hexBackgroundEl = document.querySelector(`.hex-background`);
 const hexRowEl = document.querySelector(`.hex-row`);
 
+// Mouse background effect
 startupContainerEl.onmousemove = e => {
   var x = e.pageX - startupContainerEl.offsetLeft;
   var y = e.pageY - startupContainerEl.offsetTop;
   startupContainerEl.style.setProperty('--x', x + 'px');
   startupContainerEl.style.setProperty('--y', y + 'px');
 };
+
+// Get user's screen size on startup
+const getWindowWidth = () => {
+  const windowWidth = window.screen.width * window.devicePixelRatio;
+
+  return Math.round(windowWidth / 104) + 4;
+};
+
+const getWindowHeight = () => {
+  const windowHeight = window.screen.height * window.devicePixelRatio;
+
+  return Math.round(windowHeight / 120) + 4;
+};
+
+const HEX_ROW_SIZE = getWindowWidth();
+const HEX_COLUMN_SIZE = getWindowHeight();
 
 // Add hex backgrounds
 const setHexBackground = () => {
@@ -24,7 +41,7 @@ const setHexBackground = () => {
     let temp = ``;
 
     //RNG dictates the hex color
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < HEX_ROW_SIZE; i++) {
       let count = createRandomNumber(1, 1000);
       if (count >= 880) {
         temp += darkHexHTML;
@@ -39,7 +56,7 @@ const setHexBackground = () => {
     return temp;
   };
 
-  for (let i = 0; i < 11; i++) {
+  for (let i = 0; i < HEX_COLUMN_SIZE; i++) {
     let hexRowHTML = `<div class="hex-row">${createHexColumns()}</div>`;
 
     hexBackgroundEl.insertAdjacentHTML(`beforeend`, hexRowHTML);
