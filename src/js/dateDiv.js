@@ -4,6 +4,7 @@
 const weatherAPIKey = `Cvxmc2Ogrv8h1fX7NH36GFk0zWn8roJA`;
 
 // Date Elements
+const dateDivEl = document.querySelector(`.date-div`);
 const currentLocationEl = document.querySelector(`.current-location`);
 const currentDayEl = document.querySelector(`.current-day`);
 const currentDateEl = document.querySelector(`.current-date`);
@@ -133,10 +134,14 @@ const setGreeting = time => {
 };
 
 // /////////////////////
-setDate(new Date());
-setGreeting(new Date().getHours());
-// [NOTE] Uncomment to use location api.  Each use takes 1 unit.  Free users get 1000 units.s
-// getIPAddressData();
+if (dateDivEl.children.length === 0) {
+  dateDivEl.remove();
+} else {
+  setDate(new Date());
+  setGreeting(new Date().getHours());
+  // [NOTE] Uncomment to use location api.  Each use takes 1 unit.  Free users get 1000 units.s
+  // getIPAddressData();
+}
 
 // /////////////////////
 // [TODO] Create condition where src isn't changed by API, then adjust dateDiv
