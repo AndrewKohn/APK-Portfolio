@@ -49,6 +49,7 @@
   box-shadow: 0 0 10px 6px rgba(34, 34, 34, 0.158);
   background-color: rgba(254, 254, 254, 0.1);
   backdrop-filter: blur(10px);
+  cursor: auto;
 }
 
 .name-email-wrapper {
