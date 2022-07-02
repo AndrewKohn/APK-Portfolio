@@ -18,10 +18,12 @@
 }
 
 .section-container--about .flex-row:nth-child(4) {
+  max-width: 80rem;
   padding-top: 4.8rem;
 }
 
 .section-container--about .flex-row:last-child {
+  max-width: 80rem;
   padding: 4.8rem 0 9.2rem 0;
 }
 
@@ -83,4 +85,8 @@
   filter: grayscale(0) blur(0) brightness(1);
   transform: scale(1.15);
   animation: scale--up 2s ease-out;
+}
+
+.highlighted-skill:hover {
+  filter: brightness(0.8) contrast(2);
 }
