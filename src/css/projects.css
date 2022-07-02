@@ -14,11 +14,12 @@
   display: grid;
   width: 100%;
   height: 80rem;
-  margin-top: 10rem;
+  padding: 10rem 0;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   justify-items: center;
   align-items: center;
+  background-color: blueviolet;
 }
 
 .grid-item {
@@ -35,7 +36,7 @@
 .modal {
   position: absolute;
   top: 0;
-  transform: translateY(18%);
+  transform: translateY(10%);
   width: 80rem;
   height: 100rem;
   display: flex;
@@ -48,6 +49,16 @@
   cursor: auto;
   z-index: 20;
   animation: fade-in 0.5s ease-out;
+}
+
+.modal::after {
+  position: absolute;
+  top: 0;
+  content: '';
+  width: 100rem;
+  height: 100%;
+  z-index: -1;
+  background-color: transparent;
 }
 
 .overlay {
@@ -138,9 +149,9 @@
 /* Portfolio Code Repo Link */
 .portfolio-code-link {
   position: absolute;
-  bottom: 0;
+  top: 0;
   right: 0;
-  transform: translateY(-0.8rem);
+  transform: translateY(1.2rem);
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -148,7 +159,7 @@
   padding: 5px 7px;
   border-radius: 13px;
   filter: opacity(0.6);
-  animation: slide-up 1.25s ease-out;
+  animation: slide-down 1.25s ease-out;
 }
 
 .portfolio-code-icon {
