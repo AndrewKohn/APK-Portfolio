@@ -1,6 +1,7 @@
 'use strict';
 const cursorEl = document.querySelector('.cursor');
 const startUpEl = document.querySelector(`.startup-container`);
+const copyrightYearEl = document.querySelector(`.copyright-year`);
 
 // Sections
 const homeSectionEl = document.querySelector(`.section--home`);
@@ -90,7 +91,7 @@ const startupClick = () => {
 
   setTimeout(() => {
     startUpEl.classList.add('hidden');
-  }, 1000);
+  }, 975);
 
   setTimeout(() => {
     homeSectionEl.classList.remove(`anim--close-section`);
@@ -933,3 +934,11 @@ additionalSkillsBtn.addEventListener(`click`, function () {
   coreSkillsBtn.style.backgroundColor = `var(--dark-grey)`;
   coreSkillsBtn.style.color = `#bbb`;
 });
+
+////////////////////////////////////////////////////////////
+
+// /////////////// //
+// FOOTER SETTINGS //
+// /////////////// //
+const dateStr = String(new Date()).split(` `);
+copyrightYearEl.textContent = dateStr[3];
