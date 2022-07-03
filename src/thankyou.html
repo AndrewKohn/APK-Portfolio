@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italiana&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+
+      body {
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.6rem;
+        font-weight: 400;
+        background-color: #344e41;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+      }
+
+      h1 {
+        margin: 14rem auto 4rem auto;
+        font-family: 'Italiana', sans-serif;
+        font-size: 6rem;
+        letter-spacing: 3px;
+        color: #fefefe;
+      }
+
+      span {
+        color: #fefefe;
+        font-size: 2rem;
+      }
+
+      a:link,
+      a:visited {
+        color: rgb(216, 216, 216);
+        font-weight: 600;
+      }
+
+      a:hover,
+      a:active {
+        color: #e71d36;
+      }
+
+      .ellipses {
+        letter-spacing: 4px;
+      }
+
+      .seconds {
+        font-weight: 700;
+      }
+    </style>
+    <title>Andrew Kohn</title>
+  </head>
+  <body>
+    <h1>Thank You!</h1>
+    <span
+      >Returning back to the previous page <span class="ellipses">......</span>
+      <span class="seconds">5</span></span
+    >
+
+    <span>Return to the <a href="index.html">Home Page</a>.</span>
+  </body>
+  <script>
+    let n = 4;
+    var urlCountdown = setInterval(() => {
+      if (n === 0) {
+        clearInterval(urlCountdown);
+        window.location = 'index.html';
+      }
+      document.querySelector(`.seconds`).textContent = `${n}`;
+      n--;
+    }, 1000);
+  </script>
+</html>
