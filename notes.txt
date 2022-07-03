@@ -5,6 +5,8 @@
 
 ---------------------------------------------------------------------
 [TODO]
+
+
   HOME:
   ✅  -  Adjust greeting with current local time.
   ✅  -  add/remove the scroll bar when section is open/closed.
@@ -16,17 +18,14 @@
   ABOUT:
   ✅  - Fill in section with information.
 
-        Quick about me.
-        Skills
-        Job History that correlates with developement.
+  ✅      Quick about me.
+  ✅      Skills
+  ✅      Job History that correlates with developement.
 
         Other:
-          - Two buttons: Core Skills, Additional Skills
-            - Core skills are comfortable skillset without or with minimal outside assistance.
-            - Additional skills can be skills currently learning.
-
-                HTML, CSS, JS, SASS, React, NodeJs, TypeScript, WordPress, Git,
-                Github, BootStrap, NextJs, php, SQL, Python, Java,
+  ✅        - Two buttons: Core Skills, Additional Skills
+  ✅          - Core skills are comfortable skillset without or with minimal outside assistance.
+  ✅          - Additional skills can be skills currently learning.
 
               --------------
   PROJECTS:
@@ -42,30 +41,39 @@
   ✅          - Link to live demo / link to github files.
 
           Other:
-          Modal cause
+
+          Finish grid by having enticing pictures of the projects
 
               --------------
   CTA:
-    - animate submit button to show that form has been sent successfully.
+  🚩  - animate submit button to show that form has been sent successfully.
+          -> unable to do so on formsubmit.co, added thank you page instead.
 
               --------------
-  Other:
+  MISC:
 ✅    - Remove favicon in top left and add in js: if fixed-btn clicked, then change flex grow
     - If dateDiv has active tokens, then display it, otherwise hide the dateDiv html elements.
         -  Alternatively maybe find a way to automatically send an email if tokens get <100 uses left, so I can just create another free account and start over.
+    - Work on media queries
+
 
               --------------
 [NOTE]
+
+
   API's in use:
     Form submission:  https://formsubmit.co/
     Weather:          https://developer.accuweather.com/
     Location:         https://geo.ipify.org/        (1000 use limit)
 
 [FIXME]
+
+
 ABOUT:
-    - Opening section is a bit choppy
+  ✅  - Opening section is a bit choppy
 
 PROJECTS:
-    - Scrolling only in modal popup.  Scrolling in modal overlay not possible.
+  ✅  - Scrolling only in modal popup.  Scrolling in modal overlay not possible.
 
 [BUG]
+
