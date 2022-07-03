@@ -894,11 +894,15 @@ const highlightCoreSkills = function () {
       !skillChildNodes[i].classList.contains(`highlighted-skill`)
     ) {
       skillChildNodes[i].classList.toggle(`highlighted-skill`);
+      skillChildNodes[i].classList.remove(`anim--scale-down`);
+      skillChildNodes[i].classList.add(`anim--scale-up`);
     } else if (
       !skillChildNodes[i].classList.contains(`core-skill`) &&
       skillChildNodes[i].classList.contains(`highlighted-skill`)
     ) {
       skillChildNodes[i].classList.toggle(`highlighted-skill`);
+      skillChildNodes[i].classList.remove(`anim--scale-up`);
+      skillChildNodes[i].classList.add(`anim--scale-down`);
     }
   }
 };
@@ -910,11 +914,15 @@ const highlightAdditionalSkills = function () {
       skillChildNodes[i].classList.contains(`highlighted-skill`)
     ) {
       skillChildNodes[i].classList.toggle(`highlighted-skill`);
+      skillChildNodes[i].classList.remove(`anim--scale-up`);
+      skillChildNodes[i].classList.add(`anim--scale-down`);
     } else if (
       !skillChildNodes[i].classList.contains(`core-skill`) &&
       !skillChildNodes[i].classList.contains(`highlighted-skill`)
     ) {
       skillChildNodes[i].classList.toggle(`highlighted-skill`);
+      skillChildNodes[i].classList.remove(`anim--scale-down`);
+      skillChildNodes[i].classList.add(`anim--scale-up`);
     }
   }
 };
