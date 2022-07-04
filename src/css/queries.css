@@ -1,0 +1,56 @@
+@media (max-width: 1600px) {
+  .section-container {
+    max-width: 80rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1400px) {
+  .section-container {
+    max-width: 60rem;
+  }
+
+  .flex-row {
+    flex-direction: column;
+    margin-top: 8rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+  }
+
+  .grid-item {
+    width: 40rem;
+  }
+}
+
+/* [FIXME] */
+
+@media (max-width: 1150px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .section {
+    height: 100%;
+    width: 100%;
+    flex-grow: 0;
+  }
+
+  .btn {
+    display: none !important;
+  }
+
+  .fixed-btn {
+    display: flex !important;
+    pointer-events: none;
+  }
+
+  .section-container {
+    display: flex !important;
+  }
+}
