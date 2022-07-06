@@ -950,3 +950,9 @@ additionalSkillsBtn.addEventListener(`click`, function () {
 // /////////////// //
 const dateStr = String(new Date()).split(` `);
 copyrightYearEl.textContent = dateStr[3];
+
+////////////////////////////////////////////////////////////
+
+// ////////////////////// //
+// MEDIA QUERIES SETTINGS //
+// ////////////////////// //

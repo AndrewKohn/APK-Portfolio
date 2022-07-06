@@ -115,6 +115,10 @@ strong {
   align-items: center;
 }
 
+.section-container .flex-row:nth-child(2) {
+  margin-top: 10rem;
+}
+
 /* //////////////// */
 /* STARTUP SETTINGS */
 /* //////////////// */
@@ -264,6 +268,7 @@ strong {
 
 /* SCROLLBAR SETTINGS */
 ::-webkit-scrollbar {
+  cursor: auto;
   width: 0.8rem;
 }
 
