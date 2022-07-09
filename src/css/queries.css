@@ -78,6 +78,14 @@
   .section-container {
     display: flex !important;
   }
+
+  .modal {
+    width: 60rem;
+  }
+
+  .modal-information {
+    width: 45rem;
+  }
 }
 
 @media (max-width: 700px) {
@@ -111,6 +119,22 @@
 
   .menu-form {
     width: 50rem;
+  }
+
+  .modal {
+    width: 50rem;
+  }
+
+  .modal-heading {
+    font-size: 4rem;
+  }
+
+  .modal-img {
+    width: 40rem;
+  }
+
+  .modal-information {
+    width: 40rem;
   }
 }
 
