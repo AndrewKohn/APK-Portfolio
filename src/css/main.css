@@ -179,6 +179,10 @@ strong {
   backdrop-filter: blur(5px);
 }
 
+.startup-btn span {
+  white-space: nowrap;
+}
+
 .startup-btn svg,
 .startup-btn svg rect {
   position: absolute;
