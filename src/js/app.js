@@ -395,7 +395,7 @@ const editModalHTML = function (gridItem) {
         <h1 class="modal-heading">Covid Map Tracker</h1>
         <img
           class="modal-img"
-          src="../img/photos/covid-tracker-sample.png"
+          src="img/photos/covid-tracker-sample.png"
         />
 
         <div class="modal-information">
@@ -472,7 +472,7 @@ const editModalHTML = function (gridItem) {
     case 1: {
       html = `
         <h1 class="modal-heading">MGH Menu</h1>
-        <img class="modal-img" src="../img/photos/mgh-menu-sample.png" />
+        <img class="modal-img" src="img/photos/mgh-menu-sample.png" />
 
         <div class="modal-information">
           <p class="modal-text">
@@ -556,7 +556,7 @@ const editModalHTML = function (gridItem) {
         <h1 class="modal-heading">Coding Time Tracker</h1>
         <img
           class="modal-img"
-          src="../img/photos/coding-time-tracker-sample.png"
+          src="img/photos/coding-time-tracker-sample.png"
         />
 
         <div class="modal-information">
@@ -635,7 +635,7 @@ const editModalHTML = function (gridItem) {
         <h1 class="modal-heading">Loop Studios Landing Page</h1>
         <img
           class="modal-img"
-          src="../img/photos/loop-studios-sample.jpg"
+          src="img/photos/loop-studios-sample.jpg"
         />
 
         <div class="modal-information">
@@ -714,7 +714,7 @@ const editModalHTML = function (gridItem) {
         <h1 class="modal-heading">Coding Countdown</h1>
         <img
           class="modal-img"
-          src="../img/photos/coding-countdown-sample.png"
+          src="img/photos/coding-countdown-sample.png"
         />
 
         <div class="modal-information">
@@ -791,7 +791,7 @@ const editModalHTML = function (gridItem) {
     case 5: {
       html = `
         <h1 class="modal-heading">Note Taker</h1>
-        <img class="modal-img" src="../img/photos/note-taker-sample.png" />
+        <img class="modal-img" src="img/photos/note-taker-sample.png" />
 
         <div class="modal-information">
           <p class="modal-text">
