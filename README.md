@@ -11,7 +11,7 @@
 ![screenshot of live demo](img/photos/portfolio-screenshot.webp)
 
 <h2>About</h2>
-<p>This is my portfolio to help showcase projects and to get to know a little about me!</p>
+<p>This is my portfolio to help showcase projects and for you to get to know a little about me!</p>
 
 <h2>Lessons learned</h2>
 <p>I feel I went a little overboard with this project, but I didn't want to do another cookie-cutter minimalist top-down portfolio site.  At the start of the project, I got attached to the flex-grow idea of opening each section and went along with that.  After looking back, I wished I went with the mobile-first approach as I'm not too satisfied with the media queries in this project.</p>
